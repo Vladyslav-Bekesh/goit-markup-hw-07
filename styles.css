@@ -53,7 +53,7 @@ a {
   text-decoration: none;
 }
 
-.hover-focus-transition{
+.transition-prop{
   transition-duration: var(--fast-anim);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background-color, border-color, box-shadow ;
@@ -63,23 +63,24 @@ a {
 /* ------------------------------------HEADER FOOTER------------------------------------ */
 
 /* HEADER */
-.border-bottom-portfolio {
+.header--underline {
   border-bottom: 1px solid #ececec;
-
   margin:0 auto;
 }
 
-.header-conteiner {
+.header__container {
   display: flex;
   align-items: center;
   padding: 25px 0;
 }
 
-.studio-link {
+.header__logo {
   text-decoration: none;
   margin-left: 15px;
   margin-right: 95px;
 }
+
+/* Header logo */
 
 .webstudio {
   font-family: "Raleway";
@@ -91,19 +92,21 @@ a {
   text-decoration: none;
 }
 
-.web {
+.webstudio--web {
   color: var(--main-links-color);
 }
 
-.studio-header {
+.webstudio--studio-header {
   color: var(--studio-header-color);
 }
 
-.nav-conteiner {
+/* navigation container */
+
+.nav {
   margin-right: auto;
 }
 
-.links-list {
+.nav__list {
   list-style: none;
   margin: 0px;
   display: flex;
@@ -115,7 +118,7 @@ a {
   
 }
 
-.links-list-item{
+.nav__item{
   position: relative;
 }
 
@@ -145,7 +148,7 @@ a {
   position: absolute;
 }
 
-.link-item {
+.nav__link-item {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -159,37 +162,36 @@ a {
 .link-item:focus {
   color: var(--main-links-color);
 }
-
-.adresses {
+/* contacts */
+.contacts {
   display: flex;
   gap: 50px;
   align-items: baseline;
 }
 
-.header-adress{
+.contacts__adress{
   color: var(--adress-benefits-color);
 }
 
-.header-mail{ 
+.contacts__mail{ 
   margin-right: 10px; 
   fill: currentColor;
 }
 
-.header-smartphone{
+.contacts__smartphone{
   margin-right: 10px;
   fill: currentColor;
 }
 
-.header-adress {
+.contacts__adress {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
-.header-adress:hover,
-.header-adress:focus {
+.contacts__adress:hover,
+.contacts__adress:focus {
   color: var(--main-links-color);
 }
 
@@ -209,10 +211,6 @@ a {
 
   margin: 0 auto;
 }
-
-/* .adresses{
-   
-} */
 
 .adresses-block {
   display: flex;
@@ -391,7 +389,7 @@ a {
   background-size: cover ;
 }
 
-.hero-title {
+.hero__title {
   /* txt styles */
   font-family: "Roboto";
   font-style: normal;
@@ -409,7 +407,7 @@ a {
   text-align: center;
 }
 
-.hero-button {
+.hero__button {
   /* btn */
   width: 216px;
   height: 50px;
@@ -453,6 +451,7 @@ a {
   letter-spacing: 0.03em;
   width: 270px;
 }
+
 .benefits-svg-container {
   width: 270px;
   height: 120px;
@@ -560,6 +559,14 @@ color: #FFFFFF;
 }
 
 .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19/16);
+  
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
   margin-top: 30px;
   color: var(--link-description-color);
   font-weight: 500;
