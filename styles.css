@@ -122,7 +122,7 @@ a {
   position: relative;
 }
 
-.current-page-studio::after{
+.current-page::after{
   content: '';
   display: block;
   border-radius: 2px;
@@ -202,7 +202,6 @@ a {
 
 /* footer logo */
 .footer {
-  height: 252px;
   left: 0px;
   background-color: var(--hero-footer-bgc);
   padding: 0 0;
@@ -434,9 +433,14 @@ a {
 /* BENEFITS */
 
 .benefits {
-  padding-top: 80px;
   line-height: calc(24 / 14);
   color: var(--adress-benefits-color);
+}
+
+.benefits__container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 90px 15px 0 15px;
 }
 
 .benefits__list {
@@ -480,7 +484,7 @@ a {
 /* RESPONSIBILITIES */
 
 .responsibilities {
-  padding: 80px 0;
+  padding: 0px 0;
 }
 
 .responsibilities__list {
@@ -530,7 +534,7 @@ color: #FFFFFF;
 
 .our-team {
   background-color: #F5F4FA;
-  padding: 95px 0px;
+  padding: 0px 0px;
   margin: 0 auto;
 }
 
@@ -624,7 +628,7 @@ color: #FFFFFF;
 /* -----REGULAR CUSOMERS----- */
 
 .customers {
-  padding: 95px 0;
+  padding: 0px 0;
 }
 
 .customers__list {
