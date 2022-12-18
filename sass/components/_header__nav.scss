@@ -16,6 +16,7 @@
 
 .nav__item{
   position: relative;
+  @include smoth-anim();
 }
 
 .current-page::after{
