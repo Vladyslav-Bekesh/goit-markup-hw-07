@@ -683,6 +683,17 @@ a {
   color: var(--link-description-color);
 }
 
+.transition-prop {
+  -webkit-transition-duration: var(--fast-anim);
+          transition-duration: var(--fast-anim);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color, background-color, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-property: color, background-color, border-color, box-shadow, -webkit-box-shadow;
+}
+
 .header--underline {
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
