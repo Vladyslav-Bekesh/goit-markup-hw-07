@@ -648,6 +648,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
@@ -785,7 +786,7 @@ p {
   position: relative;
 }
 
-.color {
+.current-page {
   color: #2196f3;
 }
 
@@ -795,7 +796,7 @@ p {
   border-radius: 2px;
   width: var(--header-underline-width);
   height: 4px;
-  bottom: -33px;
+  bottom: -32px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -810,7 +811,6 @@ p {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--link-description-color);
 }
 .nav__link-item:hover, .nav__link-item:focus {
   color: var(--main-links-color);

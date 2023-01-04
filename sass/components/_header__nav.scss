@@ -18,7 +18,7 @@
   position: relative;
 }
 
-.color{
+.current-page{
   color: #2196f3;
 }
 
@@ -28,7 +28,7 @@
   border-radius: 2px;
   width:var(--header-underline-width);
   height: 4px;
-  bottom: -33px;
+  bottom: -32px;
   left: 50%;
   transform: translate(-50%);
   background-color: var(--main-links-color);
@@ -42,7 +42,6 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--link-description-color);
   &:hover,
   &:focus {
     color: var(--main-links-color);
