@@ -2,8 +2,6 @@
 @import './utils/_variables';
 
 //base styles
-@import './base/_reset';
-@import './base/_base';
 @import './base/_hero';
 @import './base/_benefits';
 @import './base/_responsibilities';
@@ -14,6 +12,7 @@
 @import './base/_products';
 
 //components styles
+@import './components/_base';
 @import './components/_container';
 @import './components/_grid';
 @import './components/_properties-titles';

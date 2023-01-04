@@ -18,26 +18,17 @@
   position: relative;
 }
 
+.color{
+  color: #2196f3;
+}
+
 .current-page::after{
   content: '';
   display: block;
   border-radius: 2px;
   width:var(--header-underline-width);
   height: 4px;
-  bottom: -32px;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: var(--main-links-color);
-  position: absolute;
-}
-
-.current-page-portfolio::after{
-  content: '';
-  display: block;
-  border-radius: 2px;
-  width: var(--header-underline-width);
-  height: 4px;
-  bottom: -32px;
+  bottom: -33px;
   left: 50%;
   transform: translate(-50%);
   background-color: var(--main-links-color);

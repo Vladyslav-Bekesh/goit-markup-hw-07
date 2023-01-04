@@ -1,3 +1,5 @@
+.products
+
 .products__list {
   list-style: none;
   padding: 0;
@@ -9,7 +11,9 @@
 }
 
 .product__text {
-  padding: 0 25px 25px 25px;
+  padding: 20px 24px;
+  border: #eee solid 1px;
+  border-top: none;
 }
 
 .product__name {
@@ -30,7 +34,6 @@
 }
 
 .product__item {
-  border: #eeeeee solid 1px;
   width: 370px;
   &:hover,
   &:focus {
