@@ -67,12 +67,7 @@
 .benefits {
   line-height: 1.7142857143;
   color: var(--adress-benefits-color);
-}
-
-.benefits__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 90px 15px 0 15px;
+  padding-top: 90px;
 }
 
 .benefits__list {
@@ -120,10 +115,6 @@
   margin-bottom: 10px;
 }
 
-.responsibilities {
-  padding: 0px 0;
-}
-
 .responsibilities__list {
   list-style: none;
   display: -webkit-box;
@@ -143,7 +134,7 @@
 
 .responsibilities__overlay {
   position: absolute;
-  bottom: 4px;
+  bottom: 0px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +184,7 @@
   line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   /* box prop */
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -290,8 +281,8 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: background-color, var(--fast-anim);
-  transition: background-color, var(--fast-anim);
+  -webkit-transition: opacity var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -310,17 +301,16 @@
   height: 580px;
   background-color: #fff;
   border-radius: 4px;
-  -webkit-transition: opacity, var(--fast-anim), -webkit-transform;
-  transition: opacity, var(--fast-anim), -webkit-transform;
-  transition: transform, opacity, var(--fast-anim);
-  transition: transform, opacity, var(--fast-anim), -webkit-transform;
+  -webkit-transition: -webkit-transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
   -webkit-transform: translateX(-50%) translateY(-70%);
           transform: translateX(-50%) translateY(-70%);
-  opacity: 0;
 }
 
 .modal-close-button {
@@ -595,12 +585,6 @@
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
-  -webkit-transition-duration: var(--fast-anim);
-          transition-duration: var(--fast-anim);
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform;
 }
 
 .product__thumb {
@@ -636,10 +620,10 @@
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transition: var(--fast-anim), -webkit-transform;
-  transition: var(--fast-anim), -webkit-transform;
-  transition: transform, var(--fast-anim);
-  transition: transform, var(--fast-anim), -webkit-transform;
+  -webkit-transition: opacity var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), opacity var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), opacity var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -676,7 +660,11 @@ p {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 90px 15px;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 90px 0;
 }
 
 /* GRID SETTINGS */
@@ -856,7 +844,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  padding: 0;
+  padding-bottom: 30px;
   margin: 0;
 }
 
@@ -913,20 +901,15 @@ p {
 }
 
 /* footer adress */
-.adresses__street {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-}
-
-.adresses__virtual {
+.adresses__txt {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.adresses__txt:hover, .adresses__txt:focus {
+  color: #fff;
 }
 
 /* footer socials */

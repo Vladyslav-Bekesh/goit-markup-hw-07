@@ -1,13 +1,10 @@
 .benefits {
   line-height: calc(24 / 14);
   color: var(--adress-benefits-color);
+  padding-top: 90px;
 }
 
-.benefits__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 90px 15px 0 15px;
-}
+
 
 .benefits__list {
   list-style: none;

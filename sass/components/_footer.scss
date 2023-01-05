@@ -22,22 +22,16 @@
 }
 
 /* footer adress */
-.adresses__street {
-  font-style: normal;
-
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-}
-
-.adresses__virtual {
+.adresses__txt {
   font-style: normal;
 
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  &:hover,&:focus {
+      color: #fff;
+    }
 }
 
 /* footer socials */
